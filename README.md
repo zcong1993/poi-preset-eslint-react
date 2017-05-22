@@ -34,7 +34,7 @@ This preset activate in *all* mode!
 ### Examples
 
 ```js
-require('poi-preset-eslint')({
+require('poi-preset-eslint-react')({
   loaderOptions: {
     mode: 'production', // only in `production` mode
     loaderOptions: {
