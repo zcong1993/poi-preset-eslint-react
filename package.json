@@ -8,7 +8,8 @@
   },
   "main": "index.js",
   "files": [
-    "index.js"
+    "index.js",
+    ".eslintrc"
   ],
   "scripts": {
     "test": "echo 'no tests!' && npm run lint",
@@ -19,6 +20,8 @@
   "dependencies": {
     "babel-eslint": "^7.2.3",
     "eslint": "^3.19.0",
+    "eslint-loader": "^1.7.1",
+    "eslint-config-react-app": "^1.0.3",
     "eslint-formatter-pretty": "^1.1.0",
     "eslint-plugin-flowtype": "^2.33.0",
     "eslint-plugin-import": "^2.2.0",
