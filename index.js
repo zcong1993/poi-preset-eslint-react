@@ -1,4 +1,3 @@
-const path = require('path')
 const eslintFormatter = require('eslint-formatter-pretty')
 
 const baseOptions = {
@@ -10,12 +9,12 @@ const baseOptions = {
       commonjs: true,
       es6: true,
       jest: true,
-      node: true,
+      node: true
     }
   },
   rules: {
-    'semi': ['error', 'never'],
-    'indent': ['error', 2, { "SwitchCase": 2 }],
+    semi: ['error', 'never'],
+    indent: ['error', 2, { SwitchCase: 2 }],
     'object-curly-spacing': ['error', 'always'],
     'react/react-in-jsx-scope': 'off',
     'react/jsx-indent': ['error', 2]
