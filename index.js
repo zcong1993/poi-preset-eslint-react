@@ -1,13 +1,25 @@
-const path = require('path')
 const eslintFormatter = require('eslint-formatter-pretty')
 
 const baseOptions = {
   formatter: eslintFormatter,
   baseConfig: {
-    extends: ['react-app']
+    extends: ['xo', 'xo-react'],
+    env: {
+      browser: true,
+      commonjs: true,
+      es6: true,
+      jest: true,
+      node: true
+    }
   },
-  useEslintrc: false,
-  configFile: path.resolve(__dirname, '.eslintrc')
+  rules: {
+    semi: ['error', 'never'],
+    indent: ['error', 2, { SwitchCase: 2 }],
+    'object-curly-spacing': ['error', 'always'],
+    'react/react-in-jsx-scope': 'off',
+    'react/jsx-indent': ['error', 2]
+  },
+  useEslintrc: false
 }
 
 module.exports = ({
