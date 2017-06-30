@@ -8,8 +8,7 @@
   },
   "main": "index.js",
   "files": [
-    "index.js",
-    ".eslintrc"
+    "index.js"
   ],
   "scripts": {
     "test": "echo 'no tests!' && npm run lint",
@@ -20,12 +19,10 @@
   "dependencies": {
     "babel-eslint": "^7.2.3",
     "eslint": "^3.19.0",
-    "eslint-config-react-app": "^1.0.3",
+    "eslint-config-xo": "^0.18.2",
+    "eslint-config-xo-react": "^0.12.0",
     "eslint-formatter-pretty": "^1.1.0",
-    "eslint-loader": "^1.7.1",
-    "eslint-plugin-flowtype": "^2.33.0",
-    "eslint-plugin-import": "^2.2.0",
-    "eslint-plugin-jsx-a11y": "^5.0.3",
+    "eslint-loader": "^1.8.0",
     "eslint-plugin-react": "^7.0.1"
   },
   "devDependencies": {

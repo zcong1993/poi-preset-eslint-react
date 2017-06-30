@@ -4,10 +4,9 @@ const eslintFormatter = require('eslint-formatter-pretty')
 const baseOptions = {
   formatter: eslintFormatter,
   baseConfig: {
-    extends: ['react-app']
+    extends: ['xo', 'xo-react']
   },
-  useEslintrc: false,
-  configFile: path.resolve(__dirname, '.eslintrc')
+  useEslintrc: false
 }
 
 module.exports = ({
