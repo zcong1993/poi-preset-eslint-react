@@ -17,7 +17,10 @@ const baseOptions = {
     indent: ['error', 2, { SwitchCase: 2 }],
     'object-curly-spacing': ['error', 'always'],
     'react/react-in-jsx-scope': 'off',
-    'react/jsx-indent': ['error', 2]
+    'react/jsx-indent': ['error', 2],
+    'react/prop-types': ['error', {
+      ignore: ['children']
+    }]
   },
   useEslintrc: false
 }
