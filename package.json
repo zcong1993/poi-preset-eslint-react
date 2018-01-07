@@ -1,6 +1,6 @@
 {
   "name": "poi-preset-eslint-react",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Run eslint as building react app using Poi",
   "repository": {
     "url": "zcong1993/poi-preset-eslint-react",
