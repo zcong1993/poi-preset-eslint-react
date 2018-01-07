@@ -30,8 +30,8 @@ module.exports = ({
   mode = '*'
 } = {}) => {
   return poi => {
-    poi.isMode(mode, () => {
-      poi.webpackConfig.module.rule('eslint')
+    poi.extendWebpack(mode, config => {
+      config.module.rule('eslint')
         .test(/\.(js|jsx)$/)
         .exclude
           .add(/node_modules/)
